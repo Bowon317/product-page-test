@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bitcount+Grid+Single:wght@100..900&family=Caveat:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ===== NAV ชั้น 1 ===== -->
+<nav class="nav-top">
+  <div class="logo" >Fit-Day</div>
+
+  <input type="text" placeholder="ค้นหาสินค้า..." class="search">
+
+  <div class="nav-right">
+    <button class="btn" data-lang="login">เข้าสู่ระบบ</button>
+    <button class="btn" data-lang="register">สมัครสมาชิก</button>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </div>
+</nav>
+
+<!-- ===== NAV ชั้น 2 ===== -->
+<nav class="nav-bottom">
+  <button class="btn" data-lang="howTo">วิธีการสั่งซื้อ</button>
+  <div class="dropdown">
+  <button class="btn" data-lang="contact">ติดต่อเรา</button>
+
+  <div class="dropdown-menu">
+    <p data-lang="phone" data-lang="phone">📞 088-xxx-xxxx</p>
+    <p data-lang="email" data-lang="email">📧 Fit-Day@gmail.com</p>
+    <p data-lang="facebook">Facebook: Fit-Day</p>
+    <p data-lang="line" data-lang="line">Line: @fitday</p>
+  </div>
+</div>
+  <button id="langToggle" class="btn">TH/EN</button>
+   <button id="cart" class="btn">🛒</button>
+</nav>
+
+<h2 class="po" data-lang="category">หมวดหมู่</h2>
+<div class="poster">
+   
+  <img class="poster-img" src="./access/img-poster/โฆษณาฟิตเนสสุดเท่เพื่อวันใหม่.png">
+  <div class="category-box" id="categoryBox"></div>
+  <img class="poster-img" src="./access/img-poster/ฟิตเนสสุดสมบูรณ์แบบกับ FIT-DAY.png">
+
+</div>
+<!-- ===== CONTENT ===== -->
+<section class="product-section">
+
+  <h2 data-lang="Recommended">สินค้าแนะนำ</h2>
+
+  <div class="product-wrapper">
+
+    <div class="product-grid" id="product-list"></div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-col">
+    <h3>Fit-Day</h3>
+    <p data-lang="Selling">จำหน่ายอุปกรณ์ออกกำลังกายคุณภาพ</p>
+    <a href="tel:088xxxxxxx" class="footer-link">📞 088 xxx xxxx</a><br>
+    <a href="mailto:Fit-Day@gmail.com" class="footer-link">📧 Fit-Day@gmail.com</a>
+  </div>
+
+  <div class="footer-col">
+   <h3 data-lang="aboutTitle" >เกี่ยวกับเรา</h3>
+    <a data-lang="about" class="footer-link">เกี่ยวกับ</a><br>
+    <a data-lang="contact" class="footer-link">ติดต่อเรา</a>
+  </div>
+
+  <div class="footer-col">
+    <h3 data-lang="service" >บริการลูกค้า</h3>
+    <a data-lang="howTo" class="footer-link">วิธีสั่งซื้อ</a><br>
+    <a data-lang="shipping" class="footer-link">การจัดส่ง</a>
+  </div>
+
+  <div class="footer-col">
+    <h3 data-lang="time">เวลาทำการ</h3>
+    <p data-lang="timeDetail">9:00 - 21:00</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
